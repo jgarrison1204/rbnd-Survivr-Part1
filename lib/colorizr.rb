@@ -7,10 +7,16 @@ class String
     #code to generate all color methods goes here
     @@colors.each do |color, number|
       self.send(:define_method, color) do
-        #Text goes here is placeholder.  Need to figure out how to call text into it.
-        puts "\e[#{number}m" + "text goes here" + "\e[0m"
+        #Calls method to convert methods in create_colors to instance methods.
+        print_colors(number)
       end
     end
+  end
+
+  #Converts methods created through create_colors to instance methods
+    #so we can call then on any instance of a string.
+  def print_colors(number)
+     puts "\e[#{number}m" + "text goes here" + "\e[0m"
   end
 
   def self.colors
@@ -34,4 +40,4 @@ lakers = String.new
 String.create_colors
 p lakers.pink
 String.colors
-String.sample_colors
+#String.sample_colors
