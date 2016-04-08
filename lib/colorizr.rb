@@ -7,16 +7,9 @@ class String
     #code to generate all color methods goes here
     @@colors.each do |color, number|
       self.send(:define_method, color) do
-        #Calls method to convert methods in create_colors to instance methods.
-        print_colors(number)
+        puts "\e[#{number}m #{self}\e[0m"
       end
     end
-  end
-
-  #Converts methods created through create_colors to instance methods
-    #so we can call then on any instance of a string.
-  def print_colors(number)
-     puts "\e[#{number}m" + "text goes here" + "\e[0m"
   end
 
   def self.colors
@@ -30,14 +23,10 @@ class String
 
   def self.sample_colors
     @@colors.each do |color, number|
-      #Need to figure out how to call methods from create_colors here.
-      puts "This is #{color}"#.color
+      #Send takes the name of the color ":red" and calls the cooresponding methods
+      "This is #{color}".send(color)
     end
   end
 end
 
-lakers = String.new
 String.create_colors
-p lakers.pink
-String.colors
-#String.sample_colors
