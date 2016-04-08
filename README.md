@@ -2,6 +2,7 @@
 
 ##Install
 `git clone https://github.com/jgarrison1204/rbnd-Survivr-Part1.git`
+
 `gem install colorizr-0.0.2.gem`
 
 ##License
