@@ -1,7 +1,7 @@
 class String
   #Class variable (a Hash) that contains number reference per color.
   @@colors = {red: 31, green: 32, yellow: 33, blue: 34,
-  pink: 35, light_blue: 94, white: 97, light_gray: 37, black: 30}
+  pink: 35, light_blue: 94, white: 97, light_grey: 37, black: 30}
 
   def self.create_colors
     #code to generate all color methods goes here
