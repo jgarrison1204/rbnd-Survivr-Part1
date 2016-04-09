@@ -13,13 +13,11 @@ Colorizr is a gem that allows us to make strings pretty when printing to the ter
 ##Examples
 
 puts "Let's make this line blue.".blue  
-Let's make this line blue."
 puts "Lakers are still a great franchise.".red
-Lakers are still a great franchise.
 
-##Colors 
+##Colors
 
-After installing the gem 
+After installing the gem call String.colors to see the available colors in Colorizr and String.sample_colors to print out what the colors look like.
 
 ##License
 
