@@ -12,7 +12,8 @@ Colorizr is a gem that allows us to make strings pretty when printing to the ter
 
 ##Examples
 
-`puts` "Let's make this line blue."``.blue`  
+`puts` "Let's make this line blue."``.blue`
+  
 `puts` "Lakers are still a great franchise."``.red`
 
 ##Colors
