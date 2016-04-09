@@ -1,7 +1,7 @@
 # rbnd-Survivr-Part1
 
 ##About
-Colorizr is a gem that allows us to make strings pretty when printing to the command-line! We can use it to change the color of strings from default to several, fancier, colors.
+Colorizr is a gem that allows us to make strings pretty when printing to the terminal! We can use it to change the color of strings from default to several, fancier, colors.
 
 ##Install
 `git clone https://github.com/jgarrison1204/rbnd-Survivr-Part1.git`
