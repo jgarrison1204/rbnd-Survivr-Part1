@@ -1,9 +1,25 @@
 # rbnd-Survivr-Part1
 
+##About
+Colorizr is a gem that allows us to make strings pretty when printing to the terminal! We can use it to change the color of strings from default to several, fancier, colors.
+
 ##Install
 `git clone https://github.com/jgarrison1204/rbnd-Survivr-Part1.git`
 
+`gem build colorizr.gemspec`
+
 `gem install colorizr-0.0.2.gem`
+
+##Examples
+
+puts "Let's make this line blue.".blue  
+Let's make this line blue."
+puts "Lakers are still a great franchise.".red
+Lakers are still a great franchise.
+
+##Colors 
+
+After installing the gem 
 
 ##License
 
