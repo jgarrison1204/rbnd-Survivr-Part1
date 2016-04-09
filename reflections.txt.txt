@@ -1,0 +1,12 @@
+
+ How does your gem take advantage of Ruby’s metaprogramming capabilities?
+
+	We use define_method to create 9 color instance methods as oppose to created them individually.  We also use the send in the sample_colors to call each of the color instance methods.
+And, the following reflections:
+
+    How long did you spend working on this project?
+	About 4 hours which is considerably less than I have spent on previous projects.
+    What was the most rewarding challenge you conquered?
+	Figuring out how define_method works to save the time of writing individual instance methods,
+    Where do you still have room to grow?
+	I had some trouble understanding exactly what "self" is and what are some common use cases for it.
